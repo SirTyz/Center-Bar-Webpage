@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    background-color: transparent;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('images/background_image.jpg');
+    position: fixed;
+    width: 100%;
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.outerCenterContainer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.innerCenterContainer {
+  width: 750px;
+
+  font-size:36px;
+  display: inline-block;
+}
+
+
+/*navbar styles*/
+.navbar {
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.0);
+
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar  li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.navbar .active {
+    background-color: #4CAF50;
+}
+
+.navbar ul li.right {float: right;}
+
+@media screen and (max-width: 1500px){
+    .navbar ul li.right,
+    .navbar ul li {float: none;}
+    .navbar {text-align: center;}
+}
